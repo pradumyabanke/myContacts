@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CricSpectre Platform</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>CricSpectre Platform</h1>
+      <p>Registered login, subscription plans, and live cricket matches.</p>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>1) Register</h2>
+        <form id="registerForm">
+          <input type="text" id="regName" placeholder="Name" required />
+          <input type="email" id="regEmail" placeholder="Email" required />
+          <input
+            type="password"
+            id="regPassword"
+            placeholder="Password"
+            required
+          />
+          <button type="submit">Create Account</button>
+        </form>
+        <form id="verifyForm">
+          <input type="email" id="verifyEmail" placeholder="Email" required />
+          <input type="text" id="verifyOtp" placeholder="OTP" required />
+          <button type="submit">Verify OTP</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>2) Login</h2>
+        <form id="loginForm">
+          <input type="email" id="loginEmail" placeholder="Email" required />
+          <input
+            type="password"
+            id="loginPassword"
+            placeholder="Password"
+            required
+          />
+          <button type="submit">Login</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>3) Subscription Plans</h2>
+        <div id="plans" class="plans"></div>
+      </section>
+
+      <section class="card">
+        <h2>4) Dashboard</h2>
+        <button id="loadDashboard">Load Dashboard</button>
+        <pre id="dashboard"></pre>
+      </section>
+
+      <section class="card">
+        <h2>5) Live Matches</h2>
+        <button id="loadMatches">Load Live Matches</button>
+        <div id="matches"></div>
+      </section>
+    </main>
+
+    <div id="toast"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
